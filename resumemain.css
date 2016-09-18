@@ -1,0 +1,268 @@
+ /****************************************************
+Reset
+****************************************************/
+body, address, div, h1, h2, h3, p, a, ul, li, header, body, main, section {
+  font-style:normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/****************************************************
+Base
+****************************************************/
+.bg-container {
+  transition: 0.25s linear;
+  visibility: hidden;
+}
+
+.show-bg-container {
+    background-image: url(bg.png);
+    border: 1px solid #858585;
+    box-sizing: border-box;
+    padding: 7em 13em;
+    transform: skewY(90deg);
+    visibility: visible;
+}
+
+button.resume {
+  background: linear-gradient( to right, #9c6391, #d9c4d5);
+  border: 1px solid #2c1c29;
+  border-radius: 2px;
+  color: #2c1c29;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+button .content {
+  position: absolute;
+  transition: 0.3s;
+}
+
+button .top {
+  top: 0px;
+}
+
+button .bottom {
+  top: 100px;
+}
+
+button.resume:hover {
+  background: linear-gradient( to right, #d9c4d5, #9c6391);
+}
+
+button.resume:hover .top {
+  top: -100px;
+}
+
+button.resume:hover .bottom {
+  top: 0px;
+}
+
+
+body {
+
+  color: #212121;
+  font-family: Perpetua, 'Microsoft JhengHei', serif, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  margin: 2em auto;
+  width: 100em;
+}
+
+h1, h2, h3 {
+  font-family:'Microsoft JhengHei', Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+a {
+  color: #669eff;
+  transition: 0.25s ease-in;
+}
+
+a:hover, a:focus, a:active {
+    color: #ff8e7a;
+}
+
+p {
+    font-size: 1.5em;
+
+}
+
+ul {
+
+}
+
+li {
+    font-size: 1.5em;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/*******************************************
+Modal
+*******************************************/
+
+.modal {
+    background-color: #fff;
+    border-radius: 0.4em;
+    box-shadow: 0.4em 0.4em 0.6em rgba(0, 0, 0, 0.8);
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 30em;
+    transform: translate(-50%, 0);
+    transition: 0.35s ease-in-out;
+    width: 50em;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.modal-media {
+    position: relative;
+}
+
+.modal-media-title {
+    bottom: 1em;
+    font-size: 2.6em;
+    left: 1em;
+    position: absolute;
+}
+
+.modal-content {
+    padding: 1em;
+}
+
+.modal-content p {
+    font-size: 1.5m;
+    padding: 1em 0;
+}
+
+.modal-content ul {
+    text-align: center;
+}
+
+.modal-content li {
+    display: inline-block;
+    font-size: 1.4em;
+    padding-right: 3em;
+}
+
+.modal-content a {
+    color: #669eff;
+    font-weight: 700;
+}
+
+.modal-content a:hover {
+    color: #ff8e7a;
+}
+
+.modal-overlay {
+    background: hsla(0, 0%, 11%, 0.85);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    transition: 0.35s ease-in-out;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/******************************************
+Header
+******************************************/
+
+.name {
+    margin-bottom: 4em;
+}
+
+.name-container {
+  border-bottom: 1px solid #212121;
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info li {
+  border-right: 1px solid #212121;
+  display: inline-block;
+  font-family: 'Times New Roman', Perpetua, serif;
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 0 1.55em;
+}
+
+.info li:last-child {
+    border: none;
+}
+
+/************************************************
+main
+************************************************/
+
+.conspectus h2, .scholarship h2, .perspicacity h2, .yesteryear h2 {
+    margin-bottom: 0.6em;
+}
+
+.conspectus p,  .code, .metro,  .center, .institute, .hrcc, .connected, .triumph {
+    margin-bottom: 1em;
+}
+
+.code, .metro, .center, .institute, .hrcc, .connected {
+    position: relative;
+}
+
+.date {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.curriculum, .training {
+    margin-bottom: 0.75em;
+}
+
+.pertinent {
+    padding-left: 2em;
+}
+
+/******************************************************
+Footer
+******************************************************/
+
+footer {
+    font-size: 1.5em;
+    text-align: center;
+}
