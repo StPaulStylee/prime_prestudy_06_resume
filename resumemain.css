@@ -22,45 +22,17 @@ Base
     border: 1px solid #858585;
     box-sizing: border-box;
     padding: 7em 13em;
-    transform: skewY(90deg);
     visibility: visible;
 }
 
 button.resume {
-  background: linear-gradient( to right, #9c6391, #d9c4d5);
+  background: #d9c4d5;
   border: 1px solid #2c1c29;
   border-radius: 2px;
   color: #2c1c29;
   cursor: pointer;
   font-weight: bold;
-  position: relative;
 }
-
-button .content {
-  position: absolute;
-  transition: 0.3s;
-}
-
-button .top {
-  top: 0px;
-}
-
-button .bottom {
-  top: 100px;
-}
-
-button.resume:hover {
-  background: linear-gradient( to right, #d9c4d5, #9c6391);
-}
-
-button.resume:hover .top {
-  top: -100px;
-}
-
-button.resume:hover .bottom {
-  top: 0px;
-}
-
 
 body {
 
